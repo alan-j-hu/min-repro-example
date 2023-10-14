@@ -1,0 +1,18 @@
+(* sources.cm
+ *
+ * COPYRIGHT (c) 2005
+ * John Reppy (http://www.cs.uchicago.edu/~jhr)
+ * Aaron Turon (adrassi@gmail.com)
+ * All rights reserved.
+ *
+ *)
+
+Library
+  structure Main
+is
+
+  $/basis.cm
+  $/regexp-lib.cm
+
+  expand-file.sml
+  main.sml
