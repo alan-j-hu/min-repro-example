@@ -45,7 +45,12 @@ structure Main =
 	    SOME(scanAlt([], cs)) handle Error => NONE
 	  end
 
+    (* https://github.com/smlnj/smlnj/blob/7ca892cb6ebfef9dd3619ff8a4bb47055d43208b/tools/ml-lpt/common/expand-file.sml#L51
 
+       and then
+
+       https://github.com/smlnj/smlnj/blob/7ca892cb6ebfef9dd3619ff8a4bb47055d43208b/smlnj-lib/RegExp/Glue/regexp-fn.sml#L29
+     *)
     val _ = StringCvt.scanString scan "[\\t ]*@([a-zA-Z][-a-zA-Z0-9_]*)@[\\t ]*"
 
     fun main (_, _) = OS.Process.success
