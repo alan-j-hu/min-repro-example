@@ -14,5 +14,4 @@ is
   $/basis.cm
   $/regexp-lib.cm
 
-  expand-file.sml
   main.sml
